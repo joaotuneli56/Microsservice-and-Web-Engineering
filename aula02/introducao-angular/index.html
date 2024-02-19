@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Introdução Angular</title>
+
+    <style>
+        #nome{
+            color: red;
+        }
+        #nome2{
+            color: green;
+        }
+
+        .principal{
+            border: 1px solid black;
+            width: 100%;
+            height: 400px;
+        }
+
+        .interno{
+            border: 1px solid red;
+            width: 33%;
+            height: 95%;
+            float: left;
+            margin-left: 1px;
+        }
+
+        #elemento{
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+
+        }
+
+
+    </style>
+
+    <link rel="stylesheet" href="folha-estilo.css">
+
+    <title>Document</title>
+
+    <script>
+
+        function mudarCor()
+        {
+            let nome = document.getElementById('textoAlterado');
+            nome.style.backgroundColor = 'lightBlue';
+            nome.innerHTML = "Palmeiras não tem mundial!"
+        }
+
+        function somar()
+        {
+            debugger;
+            let primeiroValor = document.getElementById('primeiroValor').value;
+            let segundoValor = document.getElementById('segundoValor').value;
+            let resultado = document.getElementById('resultado');
+            let somar = parseInt(primeiroValor) + parseInt(segundoValor);
+            resultado.value = somar;
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <input type="button" value="teste css" onclick="mudarCor()">
+    
+    <p id="nome">Thiado Xavier</p>
+
+    <p id="textoAlterado">Introdução ao angular</p>
+
+    <div class="principal">
+
+        <div class="interno">
+            <h2 id="nome">Lewandovisk anuncia a construção de muralhas em presidios federais</h2>
+
+        </div>
+        <div class="interno">
+            <h2 id="nome2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, error!</h2>
+
+        </div>
+        <div class="interno">
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p>Primeiro Valor <input type="text" id="primeiroValor"></p>
+
+    <p>Segundo Valor <input type="text" id="segundoValor"></p>
+
+    <p>Resultado <input type="text" id="resultado"></p>
+
+    <input type="button" value="Somar" onclick="somar()">
+    
+</body>
+</html>
